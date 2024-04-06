@@ -7,16 +7,33 @@
     --cor-fundo: #f6f6f6;
 }
 
-/* NAV BAR */
-nav#nav {
-    color: #ffffff;
+/* navbar */
+nav.navbar {
     background-color: var(--cor-tema);
-    height: 5em;
+}
 
+nav.navbar div.collapse a {
     display: flex;
-    align-items: center;
-    gap: 3%;
-    padding-left: 3%;
+    justify-content: center;
+
+    text-shadow: 1px 1px 5px grey;
+    
+    padding: 8px;
+    border-bottom: 2px solid white;
+    /* margin-bottom: 2px;
+    border: 2px solid white; */
+}
+
+nav.navbar div.collapse a:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+/* logo na nav bar*/
+nav.navbar a.navbar-brand img  {
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 70px;
 }
 
 #nav img {
@@ -24,5 +41,5 @@ nav#nav {
     background-color: white;
     padding: 2px;
     max-width: 80px;
-    max-height: 65px;
+    max-height: 80px;
 }
