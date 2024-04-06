@@ -43,3 +43,26 @@ nav.navbar a.navbar-brand img  {
     max-width: 80px;
     max-height: 80px;
 }
+
+/* =========== */
+
+/* JOGOS */
+
+section#jogos {
+    border: solid red;
+}
+
+#jogos div.row {
+    border: solid yellow;
+}
+
+.row .col-sm span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row .col-sm span img {
+    width: 100px;
+}
