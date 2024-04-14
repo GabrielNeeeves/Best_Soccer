@@ -32,30 +32,31 @@
           </nav>
 
     <main id="main">
+
         <!-- LOGIN -->
-        <form id="login">
-            <h1>Login</h1>
+        <div class="container">
+          <div class="row">
 
-            <input type="text" name="usuario" id="usuarioNomeLogin" placeholder="Usuário">
+            <!--Logar-->
+            <div class="col-sm">
+              <h1>Login</h1>
+              <input type="text" name="" id="usuarioNome" placeholder="Nome">
+              <input type="text" name="" id="usuarioEmail" placeholder="Email">
+              <input type="text" name="" id="usuarioSenha" placeholder="Senha">
+              <button id="entrar">Entrar</button>
+            </div>
 
-            <input type="password" name="usuario" id="usuarioSenhaLogin" placeholder="Senha">
+            <!--Cadastrar-->
+            <div class="col-sm">
+              <h1>Cadastre-se</h1>
+              <input type="text" name="" id="cadastroNome" placeholder="Nome">
+              <input type="text" name="" id="cadastroEmail" placeholder="Email">
+              <input type="text" name="" id="cadastroSenha" placeholder="Senha">
+              <button id="cadastrar">Cadastrar</button>
+            </div>
 
-            <a href="#" target="_blank">Esqueceu a senha?</a>
-            <a href="#" target="_self"><button>Entrar</button></a>
-        </form>
-
-        <!-- CADASTRO COMO ADMIN -->
-        <form id="cadastro">
-            <h1>Cadastre-se como ADMIN</h1>
-
-            <input type="text" name="usuario" id="usuarioNomeCadastro" placeholder="Usuário">
-
-            <input type="email" id="usuarioEmailCadastro" placeholder="Email">
-
-            <input type="password" name="usuario" id="usuarioSenhaCadastro" placeholder="Senha">
-
-            <a href="#" target="_blank"><button>Cadastrar</button></a>
-        </form>
+          </div>
+        </div>
     </main>
 
     <!-- JS -->

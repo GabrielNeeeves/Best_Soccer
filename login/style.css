@@ -40,151 +40,63 @@ nav.navbar a.navbar-brand img  {
     border: 1px solid white;
 }
 
-main#main {
-    margin: 12% auto;
-    height: 25rem;
-    /* max-width: 55rem; */
-    max-width: 80%;
-    padding: 8px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas com larguras iguais */
-    gap: 10px; /* Espaço entre as colunas */
-}
-
 
 /* LOGIN */
-form#login {
+div.container {
+    margin-top: 5%;
+    width: 80vw;
+    padding: 10px;
+    position: relative;
+}
+
+.container .col-sm {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-
-    max-width: 80%;
-    
-    gap: 20px;
-    background-color: var(--cor-fundo);
-    border-radius: 10px;
-}
-
-#login h1 {
-    color: var(--cor-tema);
-}
-
-#login input {
-    background-color: lightgrey;
-    border: none;
-    padding: 15px;
-    max-width: 10em;
-    border-radius: 10px;
-    font-size: 20px;
-
-    color: grey;
-}
-
-#login input:hover {
-    transform: scale(1.1);
-    transition: .2s ease-in-out;
-}
-
-#login input:focus {
-    outline: none;
-}
-
-#login a {
-    text-decoration: none;
-    color: var(--cor-link);
-}
-
-#login a:hover {
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-#login button {
-    padding: 8px;
-    font-size: 20px;
-    border-radius: 10px;
-    width: 7em;
-
-    text-decoration: none;
-    border: none;
-    color: #ffffff;
-    background-color: var(--cor-tema);
-}
-
-#login button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-/* CADASTRE-SE */
-form#cadastro {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
-    align-items: center;
-    
-    max-width: 80%;
-    
-    padding-top: 10%;
     gap: 20px;
 
     background-color: var(--cor-fundo);
-    border-radius: 10px;
+
+    margin: 0 5px 5px 0;
+
+    border-radius: 8px;
+    height: 25em;
 }
 
-#cadastro h1{
-    font-size: 1.7em;
+.container .col-sm h1 {
     color: var(--cor-tema);
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
 }
 
-
-#cadastro input {
+.container .col-sm input {
     background-color: lightgrey;
     border: none;
-    padding: 15px;
-    max-width: 10em;
-    border-radius: 10px;
-    font-size: 20px;
-
-    color: grey;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
 }
 
-#cadastro input:hover {
-    transform: scale(1.1);
-    transition: .2s ease-in-out;
-}
-
-#cadastro input:focus {
+.container .col-sm input:focus {
     outline: none;
-}
-
-#cadastro a {
-    text-decoration: none;
-    color: var(--cor-link);
-}
-
-#cadastro a:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: .2s;
 }
 
-#cadastro button {
-    padding: 8px;
-    font-size: 20px;
-    border-radius: 10px;
-    width: 7em;
-
-    text-decoration: none;
+.container .col-sm #entrar,  #cadastrar{
+    padding: 8px 28px;
+    border-radius: 8px;
     border: none;
-    color: #ffffff;
     background-color: var(--cor-tema);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-#cadastro button:hover {
+.container .col-sm #entrar:hover, #cadastrar:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: .2s;
 }
