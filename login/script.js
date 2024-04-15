@@ -1,12 +1,19 @@
 // LOGIN //
-const formularioLogin = document.querySelector("#login");
-const usuarioNomeLogin = document.querySelector("#usuarioNomeLogin");
-const usuarioSenhaLogin = document.querySelector("#usuarioSenhaLogin");
+const btnEntrar = document.getElementById("btnEntrar");
+const usuarioNome = document.getElementById("usuarioNome");
+const usuarioEmail = document.getElementById("usuarioEmail");
+const usuarioSenha = document.getElementById("usuarioSenha");
+
+//CADASTRO
+const btnCadastrar = document.getElementById("btnCadastrar");
+const cadastroNome = document.getElementById("cadastroNome");
+const cadastroEmail = document.getElementById("cadastroEmail");
+const cadastroSenha = document.getElementById("cadastroSenha");
 
 // FUNÇÃO MANDAR DADOS DO LOGIN PARA A API //
 function login() {
 
-    fetch("http://localhost:8080/usuarios",
+    fetch("http://localhost:8080/usuarios",     //url da API
     {
         headers: {
             'Accept': 'application/json',
@@ -14,37 +21,37 @@ function login() {
         },
         method: "POST",
         body: JSON.stringify({
-            nome: usuarioNomeLogin.value,
-            senha: usuarioSenhaLogin.value
+            nome: usuarioNome.value,
+            email: usuarioEmail.value,
+            senha: usuarioSenha.value
         })
     })
     .then(function (res) {console.log(res)})
     .catch(function (res) {console.log(res)})
 };
 
-function limparLogin() {
-    usuarioNomeLogin.value = "";
-    usuarioSenhaLogin.value = "";
+function limparCampos() {
+    usuarioNome.value = "";
+    usuarioEmail.value = "";
+    usuarioSenha.value = "";
+
+    cadastroNome.value = "";
+    cadastroEmail.value = "";
+    cadastroNome.value = "";
 }
 
-formularioLogin.addEventListener('submit', function(event) {
+btnEntrar.addEventListener('click', function(event) {
     event.preventDefault();
 
     login();
-    limparLogin();
-})
+    limparCampos();
+});
 
 
-// CADASTRAR //
-const formularioCadastro = document.querySelector("#cadastro");
-const adminNomeCadastro = document.querySelector("#usuarioNomeCadastro");
-const adminEmailCadastro = document.querySelector("#usuarioEmailCadastro");
-const adminSenhaCadastro = document.querySelector("#usuarioSenhaCadastro");
-
-// FUNÇÃO MANDAR DADOS DO CADASTRO DE ADMIN PARA A API //
+// FUNÇÃO MANDAR DADOS DO CADASTRO PARA A API //
 function cadastroAdmin() {
 
-    fetch("http://localhost:8080/admins", 
+    fetch("http://localhost:8080/admins",     //url API
     {
         headers: {
             'Accept': 'application/json',
@@ -52,25 +59,11 @@ function cadastroAdmin() {
         },
         method: "POST",
         body: JSON.stringify({
-            nome: adminNomeCadastro.value,
-            email: adminEmailCadastro.value,
-            senha: adminSenhaCadastro.value
+            nome: cadastroNome.value,
+            email: cadastroEmail.value,
+            senha: cadastroSenha.value
         })
     })
     .then(function (res) {console.log(res)})
     .catch(function (res) {console.log(res)})
 };
-
-
-function limparCadastro() {
-    adminNomeCadastro.value = "";
-    adminEmailCadastro.value = "";
-    adminSenhaCadastro.value = "";
-};
-
-formularioCadastro.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    cadastroAdmin();
-    limparCadastro();
-})
