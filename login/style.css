@@ -85,17 +85,23 @@ div.container {
     transition: .2s;
 }
 
-.container .col-sm #entrar,  #cadastrar{
+.container .col-sm #btnEntrar,  #btnCadastrar{
     padding: 8px 28px;
     border-radius: 8px;
     border: none;
     background-color: var(--cor-tema);
-    color: white;
     font-size: 20px;
     font-weight: 600;
+    color: white;
 }
 
-.container .col-sm #entrar:hover, #cadastrar:hover {
+.container .col-sm #btnEntrar a {
+    text-decoration: none;
+    
+    color: white;
+}
+
+.container .col-sm #btnEntrar:hover, #btnCadastrar:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: .2s;

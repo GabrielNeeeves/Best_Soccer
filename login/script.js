@@ -11,24 +11,24 @@ const cadastroEmail = document.getElementById("cadastroEmail");
 const cadastroSenha = document.getElementById("cadastroSenha");
 
 // FUNÇÃO MANDAR DADOS DO LOGIN PARA A API //
-function login() {
+// function login() {
 
-    fetch("http://localhost:8080/usuarios",     //url da API
-    {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify({
-            nome: usuarioNome.value,
-            email: usuarioEmail.value,
-            senha: usuarioSenha.value
-        })
-    })
-    .then(function (res) {console.log(res)})
-    .catch(function (res) {console.log(res)})
-};
+//     fetch("http://localhost:8080/usuarios",     //url da API
+//     {
+//         headers: {
+//             'Accept': 'application/json',
+//             'Content-Type': 'application/json'
+//         },
+//         method: "POST",
+//         body: JSON.stringify({
+//             nome: usuarioNome.value,
+//             email: usuarioEmail.value,
+//             senha: usuarioSenha.value
+//         })
+//     })
+//     .then(function (res) {console.log(res)})
+//     .catch(function (res) {console.log(res)})
+// };
 
 function limparCampos() {
     usuarioNome.value = "";
@@ -41,29 +41,40 @@ function limparCampos() {
 }
 
 btnEntrar.addEventListener('click', function(event) {
-    event.preventDefault();
 
-    login();
+    if(usuarioNome.value === "" || usuarioEmail.value === "" || usuarioSenha === "") {
+        event.preventDefault();
+        window.alert('Campos vazio');
+        
+    } else {
+    // login();
     limparCampos();
+    }
+
 });
 
 
 // FUNÇÃO MANDAR DADOS DO CADASTRO PARA A API //
-function cadastroAdmin() {
+// function cadastroAdmin() {
 
-    fetch("http://localhost:8080/admins",     //url API
-    {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify({
-            nome: cadastroNome.value,
-            email: cadastroEmail.value,
-            senha: cadastroSenha.value
-        })
-    })
-    .then(function (res) {console.log(res)})
-    .catch(function (res) {console.log(res)})
-};
+//     fetch("http://localhost:8080/admins",     //url API
+//     {
+//         headers: {
+//             'Accept': 'application/json',
+//             'Content-Type': 'application/json'
+//         },
+//         method: "POST",
+//         body: JSON.stringify({
+//             nome: cadastroNome.value,
+//             email: cadastroEmail.value,
+//             senha: cadastroSenha.value
+//         })
+//     })
+//     .then(function (res) {console.log(res)})
+//     .catch(function (res) {console.log(res)})
+// };
+
+btnCadastrar.addEventListener('click', function(event) {
+
+    
+});
