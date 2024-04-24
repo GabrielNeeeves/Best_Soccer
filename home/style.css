@@ -42,8 +42,15 @@ nav.navbar div.collapse a:hover {
     max-height: 70px;
     border: 1px solid white;
 }
-
 /* =========== */
+
+/* MEU TIME */
+
+section#meuTime {
+    border: solid blue;
+}
+/* =========== */
+
 
 /* JOGOS */
 
@@ -103,3 +110,4 @@ section#jogos {
 
     font-size: 20px;
 }
+/* =========== */

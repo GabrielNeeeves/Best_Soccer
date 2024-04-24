@@ -42,9 +42,9 @@ function limparCampos() {
 
 btnEntrar.addEventListener('click', function(event) {
 
-    if(usuarioNome.value === "" || usuarioEmail.value === "" || usuarioSenha === "") {
+    if(usuarioNome.value === "" | usuarioEmail.value === "" || usuarioSenha === "") {
         event.preventDefault();
-        window.alert('Campos vazio');
+        window.alert('Um ou mais campo(s) vazio(s)');
         
     } else {
     // login();
