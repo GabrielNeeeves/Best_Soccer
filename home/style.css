@@ -7,6 +7,10 @@
     --cor-fundo: #f6f6f6;
 }
 
+body {
+    background-color: var(--cor-fundo);
+}
+
 /* navbar */
 nav.navbar {
     background-color: var(--cor-tema);
@@ -46,9 +50,14 @@ nav.navbar div.collapse a:hover {
 
 
 /* MEU TIME */
-
-section#meuTime {
-    padding: 15px;
+section#meuTime {   
+    padding: 12px;
+    margin: 3% auto;
+    
+    /* box-shadow: 1px 1px 10px grey;
+    border-radius: 8px; */
+    
+    width: 97vw;
     
     display: flex;
     flex-direction: column;
@@ -57,13 +66,16 @@ section#meuTime {
     
     color: var(--cor-tema);
     font-weight: 500;
+    /* background-color: #fff; */
 }
 
-
 #meuTime h2 {
-    border-top: 1px solid grey;
+    border-top: 1px solid #808080;
+    text-shadow: 1px 1px 2px var(--cor-tema);
+    
     font-weight: bold;
     width: 96vw;
+    text-align: center;
 }
 
 #meuTime h3 {
@@ -74,15 +86,18 @@ section#meuTime {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 8px;
     
-    /* border: solid green; */
-    width: 60%;
+    padding: 8px;
+    
+    width: 100%;
 }
 
 #meuTime #carrosselJogadores .carousel-inner{ 
     margin: 0 auto;
     
-    /* border: solid red; */
     width: 50%;
 }
 
@@ -94,8 +109,11 @@ section#meuTime {
 #meuTime .carousel-inner img {
     margin: 0 auto;
     
-    width: 100px;
-    height: 134px;
+    /* width: 100px;
+    height: 134px; */
+
+    width: 200px;
+    height: 268px;
 }
 
 #meuTime .carousel-inner .carousel-item  div.descricao{
@@ -139,7 +157,7 @@ section#meuTime {
     font-size: 22px;
 
     padding: 8px;
-    margin-top: 2%;
+    margin-top: 10%;
 }
 
 #meuTime input#cadastrarJogador:hover {
@@ -149,18 +167,27 @@ section#meuTime {
 }
 /* =========== */
 
-
 /* JOGOS */
-
 section#jogos {
-    padding: 15px;
+    margin: 3% auto;
+    padding: 12px;
+
+    /* box-shadow: 1px 1px 10px grey;
+    border-radius: 8px; */
+    
     color: var(--cor-tema);
     font-weight: 500;
+    border-bottom: 1px solid grey;
+
+    width: 97vw;
 }
 
 #jogos h2 {
+    text-shadow: 1px 1px 2px var(--cor-tema);
+    
     border-top: 1px solid grey;
     font-weight: bold;
+    text-align: center;
 }
 
 .row .col-sm {
@@ -209,3 +236,39 @@ section#jogos {
     font-size: 20px;
 }
 /* =========== */
+
+/* SECTION 'SOBRE' */
+section#sobre { 
+    /* max-width: 50vw; */
+    border-top: 1px solid #808080;
+    border-radius: 8px;
+    
+    box-shadow: 1px 1px 10px grey;
+
+    width: 50vw;
+
+    margin: 4% auto;
+    padding: 15px;
+}
+
+section#sobre h2 {
+    border-bottom: 1px solid #808080;
+    text-shadow: 1px 1px 2px var(--cor-tema);
+
+    font-weight: bold;
+    color: var(--cor-tema);
+    text-align: center;
+}
+
+section#sobre div#conteudoSobre {
+    /* box-shadow: 1px 1px 10px black; */
+    /* border: solid blue; */
+
+    font-size: 20px;
+    /* color: #606060; */
+}
+
+#conteudoSobre .conteudoGeral span {
+    text-shadow: 1px 1px 2px var(--cor-tema);
+    color: var(--cor-tema);
+}

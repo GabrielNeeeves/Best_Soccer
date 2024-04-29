@@ -82,7 +82,7 @@ section.cima div.fotoJogador {
 
     width: 60vw;
     
-    background-color: #fff;
+    background-color: var(--cor);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
     border-radius: 8px;
 
