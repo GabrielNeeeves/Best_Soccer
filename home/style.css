@@ -12,7 +12,7 @@ body {
 }
 
 /* navbar */
-nav.navbar {
+nav.navbar {  
     background-color: var(--cor-tema);
 }
 
@@ -53,11 +53,13 @@ nav.navbar div.collapse a:hover {
 section#meuTime {   
     padding: 12px;
     margin: 3% auto;
+
+    /* background-color: #fff; */
     
     /* box-shadow: 1px 1px 10px grey;
     border-radius: 8px; */
     
-    width: 97vw;
+    width: 70vw;
     
     display: flex;
     flex-direction: column;
@@ -101,6 +103,10 @@ section#meuTime {
     width: 50%;
 }
 
+#meuTime #carrosselJogadores.carousel.slide {
+    background-color: #fff;
+}
+
 #meuTime #carrosselJogadores .carousel-inner a:hover {
     font-size: 30px;
     transition: .2s;
@@ -139,12 +145,12 @@ section#meuTime {
 
 #meuTime #carrosselJogadores .carousel-control-prev, .carousel-control-next {
     background-color: black;
-    margin: auto 0;
+    margin: auto 15%;
 
     border: none;
 
-    width: 33px;
-    height: 50%;
+    width: 50px;
+    height: 70px;
 }
 
 #meuTime input#cadastrarJogador {
@@ -200,6 +206,10 @@ section#jogos {
 }
 
 .row .col-sm span {
+    /* border: solid red; */
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 8px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
