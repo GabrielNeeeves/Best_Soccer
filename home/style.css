@@ -145,7 +145,7 @@ section#meuTime {
 
 #meuTime #carrosselJogadores .carousel-control-prev, .carousel-control-next {
     background-color: black;
-    margin: auto 15%;
+    margin: auto 0;
 
     border: none;
 
