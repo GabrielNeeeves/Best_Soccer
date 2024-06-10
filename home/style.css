@@ -105,6 +105,7 @@ section#meuTime {
 
 #meuTime #carrosselJogadores.carousel.slide {
     background-color: #fff;
+    max-width: 800px;
 }
 
 #meuTime #carrosselJogadores .carousel-inner a:hover {
@@ -177,6 +178,7 @@ section#meuTime {
 section#jogos {
     margin: 3% auto;
     padding: 12px;
+    text-align: center;
 
     /* box-shadow: 1px 1px 10px grey;
     border-radius: 8px; */
@@ -245,6 +247,27 @@ section#jogos {
 
     font-size: 20px;
 }
+
+
+#jogos input#cadastrarPartida {
+    background-color: var(--cor-tema);
+    color: #fff;
+
+    border-radius: 12px;
+    border: none;
+
+    font-size: 22px;
+
+    padding: 8px;
+    margin: 3% 0;
+}
+
+#jogos input#cadastrarPartida:hover {
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
 /* =========== */
 
 /* SECTION 'SOBRE' */
@@ -255,7 +278,7 @@ section#sobre {
     
     box-shadow: 1px 1px 10px grey;
 
-    width: 50vw;
+    width: 96vw;
 
     margin: 4% auto;
     padding: 15px;
