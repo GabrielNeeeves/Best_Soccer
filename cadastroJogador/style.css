@@ -71,6 +71,25 @@ main#cadastro input {
     text-align: center;
 }
 
+main#cadastro div#pernaBoaInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+div#pernaBoaInput select {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+
+    text-align: center;
+}
+
 main#cadastro h2 {
     color: var(--cor-tema);
     font-weight: 600;
