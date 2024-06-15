@@ -40,10 +40,22 @@ nav.navbar a.navbar-brand img  {
     border: 1px solid white;
 }
 
+/* LOGO */
+
+main div#header {
+    margin: 2% auto;
+    width: 50vw;
+    height: 25vw;
+}
+
+main div#header img {
+    width: 100%;
+    height: 100%;
+}
 
 /* LOGIN */
 div.container {
-    margin-top: 5%;
+    /* margin-top: 5%; */
     width: 80vw;
     padding: 10px;
     position: relative;
